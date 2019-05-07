@@ -1,0 +1,53 @@
+Test cases
+solvepuzzle([[1,3,4],[8,0,5],[7,2,6]], [[1,2,3],[8,0,4],[7,6,5]],Cost).
+Cost = 6
+solvepuzzle([[2,3,1],[7,0,8],[6,5,4]], [[1,2,3],[8,0,4],[7,6,5]],Cost).
+Cost = 14
+solvepuzzle([[1,3,4],[8,6,2],[0,7,5]], [[1,2,3],[8,0,4],[7,6,5]],Cost).
+Cost = 6
+solvepuzzle([[3,6,4],[0,1,2],[8,7,5]], [[1,2,3],[8,0,4],[7,6,5]],Cost).
+Cost = 11
+solvepuzzle([[2,8,3],[1,0,4],[7,6,5]], [[1,2,3],[8,0,4],[7,6,5]],Cost).
+Cost = 4
+solvepuzzle([[1,2,3],[4,0,5],[7,8,6]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Cost = 2
+solvepuzzle([[6,0,7],[5,8,1],[2,3,4]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Cost = 27
+solvepuzzle([[3,1,7],[5,4,8],[6,2,0]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Cost = 28
+
+Not solvable
+solvepuzzle([[1,2,3],[4,0,5],[7,8,6]], [[1,2,3],[4,5,6],[8,7,0]],Cost).
+Result = 'No solution'.
+solvepuzzle([[8,1,2],[0,4,3],[7,6,5]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Result = 'No solution'.
+solvepuzzle([[0,1,3],[4,2,5],[7,8,6]], [[1,2,3],[4,5,6],[8,7,0]],Cost).
+Result = 'No solution'.
+
+Test case where the inital state and the goal test are the same
+solvepuzzle([[1,2,3],[4,5,6],[7,8,0]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Cost = 0
+solvepuzzle([[1,2,3],[7,8,0],[4,5,6]], [[1,2,3],[7,8,0],[4,5,6]],Cost).
+Cost = 0
+
+Some test cases where it takes 29 moves to reach the goal state. They take like 25 seconds
+solvepuzzle([[6,0,3],[8,5,4],[7,2,1]], [[1,2,3],[4,5,6],[7,8,0]],Cost). 
+Cost = 29.
+solvepuzzle([[6,0,3],[8,5,7],[4,1,2]], [[1,2,3],[4,5,6],[7,8,0]],Cost). 
+Cost = 29.
+solvepuzzle([[2,0,1],[3,8,4],[6,5,7]], [[1,2,3],[4,5,6],[7,8,0]],Cost). 
+Cost = 29.
+solvepuzzle([[1,0,4],[6,8,7],[2,3,5]], [[1,2,3],[4,5,6],[7,8,0]],Cost). 
+Cost = 29.
+
+Some test cases where it takes 30 moves to reach the goal state. They take like 25 seconds
+solvepuzzle([[0,5,1],[2,6,4],[3,8,7]], [[1,2,3],[4,5,6],[7,8,0]],Cost). 
+Cost = 30.
+solvepuzzle([[0,5,1],[6,8,4],[3,2,7]], [[1,2,3],[4,5,6],[7,8,0]],Cost). 
+Cost = 30.
+
+The last two test cases take like 25 seconds each. They are the hardest puzzles
+solvepuzzle([[8,6,7],[2,5,4],[3,0,1]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Cost = 31
+solvepuzzle([[6,4,7],[8,5,0],[3,2,1]], [[1,2,3],[4,5,6],[7,8,0]],Cost).
+Cost = 31
