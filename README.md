@@ -28,4 +28,4 @@ If the puzzle is not solvable it returns "No soution"
 ![Example](example.png)
 
 ## Test Cases
-You can find additional test cases in the filled called text_cases.txt
+You can find additional test cases in the file called text_cases.txt
